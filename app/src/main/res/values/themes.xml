@@ -1,0 +1,9 @@
+<resources>
+    <!-- La apariencia real se define con MaterialTheme desde Compose. -->
+    <style name="Theme.CoroutineLab" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">#F8FAFF</item>
+        <item name="android:navigationBarColor">#F8FAFF</item>
+    </style>
+</resources>

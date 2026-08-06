@@ -1,0 +1,17 @@
+# Archivos generados por Gradle y Android Studio
+.gradle/
+build/
+**/build/
+local.properties
+.idea/
+.kotlin/
+*.iml
+
+# Capturas, informes y datos locales del dispositivo
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
