@@ -1,4 +1,4 @@
-[English](README.md) · **Español**
+[English](README.md) · **Español** · [![CI](https://github.com/navalcode/coroutine-lab/actions/workflows/checks.yml/badge.svg)](https://github.com/navalcode/coroutine-lab/actions/workflows/checks.yml)
 
 # Coroutine Lab
 

@@ -1,6 +1,6 @@
 # Coroutine Lab
 
-[Español](README.es.md)
+[Español](README.es.md) · [![CI](https://github.com/navalcode/coroutine-lab/actions/workflows/checks.yml/badge.svg)](https://github.com/navalcode/coroutine-lab/actions/workflows/checks.yml)
 
 An interactive Android learning lab for Kotlin Coroutines and Flow, presented with Jetpack Compose. Fictional transport examples make execution order, cancellation, parallel work and errors visible on a timeline.
 
