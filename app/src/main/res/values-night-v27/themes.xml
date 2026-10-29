@@ -1,0 +1,1 @@
+<resources><style name="Theme.CoroutineLab" parent="Base.Theme.CoroutineLab"><item name="android:statusBarColor">#191D1A</item><item name="android:windowLightStatusBar">false</item><item name="android:navigationBarColor">#191D1A</item><item name="android:windowLightNavigationBar">false</item><item name="android:windowBackground">#191D1A</item></style></resources>

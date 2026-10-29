@@ -2,11 +2,31 @@ package com.example.coroutinelab.domain
 
 import com.example.coroutinelab.model.ErrorStrategy
 import kotlinx.coroutines.test.runTest
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.test.runCurrent
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
 class ErrorHandlingExamplesTest {
     private val examples = ErrorHandlingExamples()
+
+    @OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)
+    @Test
+    fun cancellationIsNotReportedAsABusinessFailure() = runTest {
+        val misclassified = mutableListOf<String>()
+        for (strategy in listOf(ErrorStrategy.LAUNCH_LOCAL_CATCH, ErrorStrategy.ASYNC_AWAIT)) {
+            val events = mutableListOf<String>()
+            val task = launch { examples.demonstrate(strategy) { source, message -> events += "$source:$message" } }
+            runCurrent()
+            task.cancel()
+            task.join()
+            assertTrue(task.isCancelled)
+            if (events.any { "Error capturado dentro" in it || "Error observado al pedir" in it }) {
+                misclassified += strategy.name
+            }
+        }
+        assertTrue("Cancellation was classified as a business failure: $misclassified", misclassified.isEmpty())
+    }
 
     @Test
     fun `launch captura el error dentro de su propio bloque`() = runTest {

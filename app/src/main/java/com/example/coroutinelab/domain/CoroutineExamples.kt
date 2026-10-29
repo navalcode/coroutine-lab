@@ -128,7 +128,9 @@ class ErrorHandlingExamples {
                 onEvent("launch", "Inicia una tarea sin valor de retorno")
                 delay(200)
                 error("HTTP 503 simulado")
-            } catch (error: IllegalStateException) {
+            } catch (cancelled: CancellationException) {
+            throw cancelled
+        } catch (error: IllegalStateException) {
                 // El try/catch debe estar dentro de launch para capturar su excepción.
                 onEvent("launch", "Error capturado dentro: ${error.message}")
             }
@@ -144,6 +146,8 @@ class ErrorHandlingExamples {
 
         try {
             result.await() // await suspende y vuelve a lanzar el fallo del Deferred.
+        } catch (cancelled: CancellationException) {
+            throw cancelled
         } catch (error: IllegalStateException) {
             onEvent("await", "Error observado al pedir el resultado: ${error.message}")
         }

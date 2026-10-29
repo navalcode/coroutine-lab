@@ -1,0 +1,1 @@
+<resources><style name="Theme.CoroutineLab" parent="Base.Theme.CoroutineLab"><item name="android:navigationBarColor">#FAF8F3</item><item name="android:windowLightNavigationBar">true</item></style></resources>

@@ -1,0 +1,190 @@
+[
+  {
+    "path": ".github/workflows/checks.yml",
+    "sha256": "472a20388feb8ce34ab52836c50a0834798fc93604ccf57170b881d257eb72d3"
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "bac35e134ead537825ffb79de06d013f45c9d8241b8e275aac428bbf378fd7af"
+  },
+  {
+    "path": "DESIGN.md",
+    "sha256": "c46892d1e3facae0a4e49dfb0369f31b3e0ea6e89c185d99f55f80c2458e1785"
+  },
+  {
+    "path": "README.es.md",
+    "sha256": "e422557afa52c09c588789274ebccb0a49b02a44aca582cf5514508c3da60f80"
+  },
+  {
+    "path": "README.md",
+    "sha256": "404b1d479ad6492887faa71ef4f4088a517d3b68a96e483d7af56b130a563277"
+  },
+  {
+    "path": "THIRD_PARTY.md",
+    "sha256": "6cbbfed8bea71fcef39515a66617da5b2fd27e7b0c1eeef159b4e88b0dd9d718"
+  },
+  {
+    "path": "app/build.gradle.kts",
+    "sha256": "e59465bcd5c5f338a868e53c95eb14c32db88c78d8ef211ae33e15475274bd5d"
+  },
+  {
+    "path": "app/src/androidTest/java/com/example/coroutinelab/ui/ScenarioJourneyTest.kt",
+    "sha256": "ac32b74574ceb5c406e4411a1c9cd02689e6dd056bebf1050d7c6e9538169208"
+  },
+  {
+    "path": "app/src/main/AndroidManifest.xml",
+    "sha256": "3e3e1440277f16b81627ae016745d1cb97f1c3a440fc42c5740625c86c07d2e8"
+  },
+  {
+    "path": "app/src/main/assets/licenses/Outfit-OFL.txt",
+    "sha256": "c676351bf8576b9aba743cd5eaa8c0e7ee0d51f805d720447b4df4ddb6a2e416"
+  },
+  {
+    "path": "app/src/main/java/com/example/coroutinelab/CoroutineLabViewModel.kt",
+    "sha256": "d3f774f97738e999ff7a8a79e5b221d7144f6989f222edddff5f794daca1b661"
+  },
+  {
+    "path": "app/src/main/java/com/example/coroutinelab/MainActivity.kt",
+    "sha256": "b0c4dc73e7714e8bf454c98047ff5521f804f2bad9469b513791fffd1d583430"
+  },
+  {
+    "path": "app/src/main/java/com/example/coroutinelab/data/FakeTravelRepository.kt",
+    "sha256": "7fefd57b10e340684cee8ab064b42e27606faef837d74b09cea41ec50efae5b3"
+  },
+  {
+    "path": "app/src/main/java/com/example/coroutinelab/domain/CoroutineExamples.kt",
+    "sha256": "8c5900d40cfb620120d7c1facc980e250de9d44ddab171d46f302f1feea1f308"
+  },
+  {
+    "path": "app/src/main/java/com/example/coroutinelab/model/LabModels.kt",
+    "sha256": "4fd02fe11e8ce245f6f9467c45692a94421a74e20b7ba7be2a489d4b6b861160"
+  },
+  {
+    "path": "app/src/main/java/com/example/coroutinelab/ui/CoroutineLabApp.kt",
+    "sha256": "5ad0512e8f26d05fb96cc157b0b4915844ff42d4d7550b1a3d777b11798599c8"
+  },
+  {
+    "path": "app/src/main/java/com/example/coroutinelab/ui/theme/Theme.kt",
+    "sha256": "4d19c54c8197ae5c3e524972fb82d4c1fb1dacae139540332bcbf11839cc19a4"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_launcher.xml",
+    "sha256": "3b1a0272149d8dbd73913a85f23fb8852f2f2cbb6187dc283006c0d71fb5ead2"
+  },
+  {
+    "path": "app/src/main/res/font/outfit_bold.ttf",
+    "sha256": "f8431eaa5623b80f6b7047ff39ceea1b623cf0ad9bb4044da05afafdcdb9f7b6"
+  },
+  {
+    "path": "app/src/main/res/font/outfit_medium.ttf",
+    "sha256": "51ab700d53276a167a826eb20e49c689b7e7e3d8084564ece70bdab511993f42"
+  },
+  {
+    "path": "app/src/main/res/font/outfit_regular.ttf",
+    "sha256": "5516f593c5ca20ebf130fa5b83462986daf73dabc66fef7c6ad55284b540079d"
+  },
+  {
+    "path": "app/src/main/res/font/outfit_semibold.ttf",
+    "sha256": "6d2ba45801a26c64a741bd8fb86f04ff9acefa35fadb41f1ccbd1e43ff5f25b4"
+  },
+  {
+    "path": "app/src/main/res/values-es/strings.xml",
+    "sha256": "cafc46500f2525e39e3226c0daaa165b8eaa62967a52ac31fc75ab690f9ffbd7"
+  },
+  {
+    "path": "app/src/main/res/values-night-v27/themes.xml",
+    "sha256": "40ff8463da662f6e59d717aee2dd0835a93a9bdca9f0b502a862dfdded930bd8"
+  },
+  {
+    "path": "app/src/main/res/values-night/themes.xml",
+    "sha256": "a1a066ef236e3351237028a5ccec31c0a6473c8f4ed414cecfa240ff8018eaaf"
+  },
+  {
+    "path": "app/src/main/res/values-v27/themes.xml",
+    "sha256": "fcc3073d950ded8f8200b4d3c6750b9dd2b7fff2dc847aa3acceee351e9cd988"
+  },
+  {
+    "path": "app/src/main/res/values/strings.xml",
+    "sha256": "79603adbca06dd65abeb347fc40133d4fc43e32d38e88e9d973c2fef7b229653"
+  },
+  {
+    "path": "app/src/main/res/values/themes.xml",
+    "sha256": "937bee81a32aca3380fd70ca673f6397f670ed8b2939ef293721a1667b6f18f1"
+  },
+  {
+    "path": "app/src/test/java/com/example/coroutinelab/domain/ErrorHandlingExamplesTest.kt",
+    "sha256": "796b677401f573bcdf0cf2d7b0f8ef37e74ff8652ad848d1dcee7682e90a0d39"
+  },
+  {
+    "path": "app/src/test/java/com/example/coroutinelab/domain/FlowOperatorExamplesTest.kt",
+    "sha256": "93a5ab2e8b4adcadcde52945e5436d36732c78aebdac35cef484e407f3b0d27d"
+  },
+  {
+    "path": "app/src/test/java/com/example/coroutinelab/domain/StructuredConcurrencyExamplesTest.kt",
+    "sha256": "07d764b5a4f8534aa4abb259dff98b0cf3262ca94ce35cd74cc1d497e7381414"
+  },
+  {
+    "path": "app/src/test/java/com/example/coroutinelab/domain/TravelUseCasesTest.kt",
+    "sha256": "422bdca8b182364aab8c3594d5b4ccec37fe55b6858f9fd5cb323af1bd2f9fae"
+  },
+  {
+    "path": "build.gradle.kts",
+    "sha256": "5d37009ba289b4c8b9ce47464c136b72ad6e5fba0102db032be3c13488d902f2"
+  },
+  {
+    "path": "docs/01_GUIA_DIDACTICA.md",
+    "sha256": "57b837c40154c21f2895957aa41771c47300f8c5fc11f952198b5b6a388ebb0e"
+  },
+  {
+    "path": "docs/02_LAUNCH_ASYNC_EXCEPCIONES.md",
+    "sha256": "9117d71cdcf82e2eb58ed214d99de708745c9d96ab970599769c29d3a8ea750c"
+  },
+  {
+    "path": "docs/03_REFACTORIZACIONES.md",
+    "sha256": "90028a05df51ba9148ac45be563a1ae5e9ea49a1957650ed9798bd21dd31967f"
+  },
+  {
+    "path": "docs/04_MATERIAL_PARA_COMPARTIR.md",
+    "sha256": "8975b9120ea717deb24d6b59430e9779d00dee29197bc14e77e7b6b383c99c8f"
+  },
+  {
+    "path": "docs/05_EJERCICIOS.md",
+    "sha256": "82d8d6c689eed521642be0b0c3c0cae04251914cbbc1ac4c1908edd71fa27a84"
+  },
+  {
+    "path": "docs/images/screen-en.png",
+    "sha256": "c9a551dd8fa97ca130c91bc1bc5d5ac07ca89c335be0508dad5aeaea08363e1b"
+  },
+  {
+    "path": "docs/images/screen-es.png",
+    "sha256": "95ff2091a5abd0849b602bfaed5d1180ac1a946ae8000d0b2c71706c0d05c444"
+  },
+  {
+    "path": "gradle.properties",
+    "sha256": "706e4457d1bc365149808acd2a16649fb1cb7b9466c6df0433b04fc9877f8a17"
+  },
+  {
+    "path": "gradle/libs.versions.toml",
+    "sha256": "0daa86002e4afcd76a03c9a6447a3da3cb9b0394cb52b543ff8dc85edb172100"
+  },
+  {
+    "path": "gradle/wrapper/gradle-wrapper.jar",
+    "sha256": "7d3a4ac4de1c32b59bc6a4eb8ecb8e612ccd0cf1ae1e99f66902da64df296172"
+  },
+  {
+    "path": "gradle/wrapper/gradle-wrapper.properties",
+    "sha256": "cf1a984a946684359380acf9ef64061c4a330fc38d2e7da3b83e106ad05c06e1"
+  },
+  {
+    "path": "gradlew",
+    "sha256": "b187b4c52e749f5760afdd6fadc31b2a98ad35fb249bf0dff03b72650f320409"
+  },
+  {
+    "path": "gradlew.bat",
+    "sha256": "94102713eb8fb22d032397924c0f38ab2da783ba60d07054339f1190a0c4e2cd"
+  },
+  {
+    "path": "settings.gradle.kts",
+    "sha256": "3946e352f8569482ab5feacd20ece3e0e33daf711d70889f9000b3b675d32203"
+  }
+]

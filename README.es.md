@@ -10,6 +10,16 @@ La idea central es sencilla: **predecir, ejecutar y explicar**. Cada laboratorio
 muestra una línea temporal para que el orden, el paralelismo, la cancelación y
 los errores dejen de ser comportamientos invisibles.
 
+## Usar la pantalla
+
+<img src="docs/images/screen-es.png" alt="Coroutine Lab ejecutando el operador latest en un emulador Android" width="300">
+
+Elige un escenario, predice el orden, ejecútalo y lee sus eventos reales. La estrategia de Flow/errores queda fija mientras trabaja. **Cancelar sigue en la barra al cambiar a Guía**; Limpiar está disponible cuando termina el trabajo. La recreación conserva al ViewModel propietario. El ejemplo del manejador raíz registra el error sin cerrar la actividad.
+
+Controles e instrucciones tienen recursos españoles con fallback inglés. Los títulos originales de escenarios, mensajes de traza y guías didácticas conservan su español original; la pantalla lo indica. Secuencia, origen y tipo describen emisiones reales, sin timestamps inventados.
+
+La revisión corrige además dos ejemplos que capturaban la cancelación como `IllegalStateException`. Ambos relanzan ahora `CancellationException`, con una regresión que cubre las dos estrategias. Ver [decisiones de pantalla](DESIGN.md) y [avisos de terceros](THIRD_PARTY.md).
+
 ## Qué cubre
 
 | Hito del objetivo | Evidencia en el proyecto |
@@ -71,6 +81,12 @@ Compose UI ──eventos──> ViewModel ──suspend/Flow──> ejemplos de 
 
 ## Verificación del escaparate
 
-Comprobado el 29 de octubre de 2026: nueve tests JVM, lint sin errores (un aviso) y APK debug. No se afirma una suite UI en emulador o release optimizada.
+Comprobado localmente el 29 de octubre de 2026: **10 tests JVM y cuatro recorridos de MainActivity real en emulador API 37**, además de lint y builds de APK debug/tests con JDK 17. Los recorridos comprueban Flow latest/orden y limpieza, cancelación desde Guía, recreación y manejador raíz. La suite nativa completa también pasa con texto al 150% en 360×800 dp. El recorrido Flow pasa además en vertical inglés/español, oscuro español y horizontal inglés. Las imágenes son capturas reales del emulador.
 
-El wrapper comprueba SHA-256 de Gradle 8.13. La CI se comprueba por separado; las evidencias anteriores son locales. Se conservan las licencias existentes.
+Lint no informa errores y mantiene un aviso de target. Las supresiones previas de avisos de versiones no se modifican. La CI enlazada ejecuta JVM, lint y build debug; los recorridos nativos son locales. Para ejecutarlos, usar un único emulador/dispositivo API 33+ (la regla de idioma utiliza la API de locale por aplicación):
+
+```sh
+./gradlew :app:assembleDebugAndroidTest :app:connectedDebugAndroidTest
+```
+
+La app declara API 26+, pero esta revisión no acredita todos los Android soportados, TalkBack, dispositivos físicos ni tiendas. El APK debug contiene unos 25,63 MB DEX sin comprimir; pasan las comprobaciones consultivas de alineación nativa/ZIP. Falta metadata R8 y no se acredita una tasa de optimización ni una release optimizada. El wrapper verifica SHA-256 de Gradle 8.13. Se conservan licencias y atribuciones existentes.
