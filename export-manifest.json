@@ -9,15 +9,15 @@
   },
   {
     "path": "DESIGN.md",
-    "sha256": "c46892d1e3facae0a4e49dfb0369f31b3e0ea6e89c185d99f55f80c2458e1785"
+    "sha256": "4474d7b61f535d3ceee13d57faa0bc7b6acc1808bee3dab2697d3f79a46694c2"
   },
   {
     "path": "README.es.md",
-    "sha256": "e422557afa52c09c588789274ebccb0a49b02a44aca582cf5514508c3da60f80"
+    "sha256": "e3caf08ff54225eb0d78edbe818af50ab6a928f91df446d8533b5bb3284a062a"
   },
   {
     "path": "README.md",
-    "sha256": "404b1d479ad6492887faa71ef4f4088a517d3b68a96e483d7af56b130a563277"
+    "sha256": "65c0a62829608fdabb5e0a858706cb4f707d29271a3385c3a32155a2af433c6e"
   },
   {
     "path": "THIRD_PARTY.md",
@@ -89,7 +89,7 @@
   },
   {
     "path": "app/src/main/res/values-es/strings.xml",
-    "sha256": "cafc46500f2525e39e3226c0daaa165b8eaa62967a52ac31fc75ab690f9ffbd7"
+    "sha256": "3146673a636e7d8f6c2871448c27d1aa97d15f95248960785604008ec3b257b4"
   },
   {
     "path": "app/src/main/res/values-night-v27/themes.xml",
@@ -105,7 +105,7 @@
   },
   {
     "path": "app/src/main/res/values/strings.xml",
-    "sha256": "79603adbca06dd65abeb347fc40133d4fc43e32d38e88e9d973c2fef7b229653"
+    "sha256": "7c6833196573c6a7f34e21531232f88eba5acfb12b3701002d448aba7d79e482"
   },
   {
     "path": "app/src/main/res/values/themes.xml",
@@ -133,7 +133,7 @@
   },
   {
     "path": "docs/01_GUIA_DIDACTICA.md",
-    "sha256": "57b837c40154c21f2895957aa41771c47300f8c5fc11f952198b5b6a388ebb0e"
+    "sha256": "98f58a1ae31c73d084264b22d127071200fbbeb2ca7af8b84dd0680fc2fdb83e"
   },
   {
     "path": "docs/02_LAUNCH_ASYNC_EXCEPCIONES.md",
@@ -141,23 +141,27 @@
   },
   {
     "path": "docs/03_REFACTORIZACIONES.md",
-    "sha256": "90028a05df51ba9148ac45be563a1ae5e9ea49a1957650ed9798bd21dd31967f"
+    "sha256": "5c343ddb5eaf0e7404aa4623c2d66204f5f19a1e8426203e1ecb8735b4016b50"
   },
   {
     "path": "docs/04_MATERIAL_PARA_COMPARTIR.md",
-    "sha256": "8975b9120ea717deb24d6b59430e9779d00dee29197bc14e77e7b6b383c99c8f"
+    "sha256": "23eb017d44b1d7788d89039e27cd3144b1e6c214248b71f75f6c4585d18555b1"
   },
   {
     "path": "docs/05_EJERCICIOS.md",
     "sha256": "82d8d6c689eed521642be0b0c3c0cae04251914cbbc1ac4c1908edd71fa27a84"
   },
   {
+    "path": "docs/VERIFICATION.md",
+    "sha256": "653886820751cde2fb2fcd5f1f450fd4a331bbe1f2aafdc2b81cdb1f3e2149f2"
+  },
+  {
     "path": "docs/images/screen-en.png",
-    "sha256": "c9a551dd8fa97ca130c91bc1bc5d5ac07ca89c335be0508dad5aeaea08363e1b"
+    "sha256": "69e79dd55668b7821cef18af2fc197074899d3099f3768ef341c265fcd0f89c1"
   },
   {
     "path": "docs/images/screen-es.png",
-    "sha256": "95ff2091a5abd0849b602bfaed5d1180ac1a946ae8000d0b2c71706c0d05c444"
+    "sha256": "eac3b5ad952e53437691fd987bd2a9cbdcd52138dfc812ffae10e24fcafb0fbb"
   },
   {
     "path": "gradle.properties",

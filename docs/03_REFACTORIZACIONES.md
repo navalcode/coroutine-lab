@@ -31,8 +31,9 @@ queries
     .flatMapLatest(repository::searchJourneys)
 ```
 
-La cadena declara la intención. Una consulta nueva cancela la colección interna
-anterior; una respuesta obsoleta no puede sobrescribir la nueva.
+Cuando `debounce` emite una consulta nueva, `flatMapLatest` cancela la colección
+interna anterior. La sustitución ocurre después de la espera de `debounce`, no
+inmediatamente con cada pulsación.
 
 ## Caso 2: dashboard secuencial
 
@@ -58,7 +59,7 @@ La mejora solo es válida porque ambas lecturas son independientes. `coroutineSc
 mantiene el contrato “todo o nada”: si una fuente falla, se cancela la otra y el
 llamador recibe el error.
 
-## Checklist para aplicar en producción
+## Antes de adaptar los ejemplos
 
 - ¿Las operaciones son realmente independientes?
 - ¿Un resultado parcial tiene valor? Si lo tiene, considera supervisión explícita.

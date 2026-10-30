@@ -1,21 +1,10 @@
 # Guía didáctica y mapa del objetivo
 
-## 1. Qué significa realmente el objetivo
+## 1. Qué puedes comprobar
 
-“Adquirir y aplicar conocimientos avanzados de Coroutines y Flow” combina tres
-niveles distintos:
+El laboratorio permite comparar el orden de tareas, cancelar trabajo y seguir la propagación de errores. Antes de ejecutar un ejemplo, dibuja su árbol de Jobs y predice qué eventos aparecerán. Después contrasta la predicción con la traza y los tests.
 
-1. **Comprender:** ser capaz de predecir el árbol de Jobs, la cancelación y la
-   propagación de una excepción antes de ejecutar el código.
-2. **Aplicar:** elegir una abstracción por intención de negocio, no porque sea la
-   API más familiar.
-3. **Transferir:** refactorizar código de producción y explicar la decisión a
-   otra persona con ejemplos y pruebas.
-
-La calidad y robustez mejoran cuando cada tarea tiene un propietario, los fallos
-siguen reglas visibles y las respuestas obsoletas no alcanzan la UI. La eficiencia
-mejora al paralelizar únicamente trabajo independiente y al cancelar trabajo que
-ya no aporta valor.
+Los casos de búsqueda y carga paralela son ficticios. Puedes adaptar sus técnicas a otro proyecto autorizado, comprobando antes sus contratos de cancelación y error.
 
 ## 2. Modelo mental de concurrencia estructurada
 
@@ -46,7 +35,7 @@ Haz primero la pregunta de producto:
 |---|---|---|
 | Debe respetarse el orden y no solaparse | `flatMapConcat` | Cola de escrituras |
 | Todo debe terminar y puede ir en paralelo | `flatMapMerge` | Precarga de varias fichas |
-| Solo importa la intención más reciente | `flatMapLatest` | Búsqueda mientras se escribe |
+| La nueva consulta sustituye la anterior | `flatMapLatest` | Búsqueda mientras se escribe |
 
 `flatMapMerge` necesita además un límite de concurrencia razonado. Más concurrencia
 no siempre significa más rapidez: puede agotar sockets, memoria o cuotas del API.
@@ -73,13 +62,13 @@ Para cada pestaña:
 6. Cambia un `delay`, introduce un fallo y vuelve a ejecutar los tests.
 7. Explica en voz alta por qué el resultado es correcto.
 
-## 6. Criterio de finalización de los hitos
+## 6. Preguntas para revisar lo aprendido
 
-- Puedes dibujar el árbol de Jobs de los dos casos reales.
+- Puedes dibujar el árbol de Jobs de los dos ejemplos ficticios.
 - Explicas por qué `GlobalScope` no aparece en el proyecto.
 - Predices qué respuestas produce cada `flatMap*`.
 - Sabes dónde colocar el `try/catch` para `launch` y para `await`.
 - Distingues `coroutineScope` de `supervisorScope` mediante una regla de negocio.
 - Los tests pasan y puedes defender qué comportamiento verifica cada uno.
-- Has compartido o presentado el material de `04_MATERIAL_PARA_COMPARTIR.md`.
+- Puedes explicar un experimento con el guion de `04_MATERIAL_PARA_COMPARTIR.md`. El guion no acredita que se haya impartido una sesión.
 

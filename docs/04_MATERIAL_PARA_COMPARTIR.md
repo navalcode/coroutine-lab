@@ -1,10 +1,8 @@
 # Material para una sesión de 20 minutos
 
-Título sugerido: **Coroutines predecibles: de Jobs manuales a intención de negocio**
+Título sugerido: **Coroutines: orden de ejecución, cancelación y errores**
 
-Este guion cumple el hito de preparar una aportación para la comunidad Mobile
-Android. Antes de publicarlo, elimina cualquier referencia interna y adapta los
-ejemplos al canal y formato acordados por el equipo.
+Guion propuesto para explicar los experimentos del repositorio en una sesión de veinte minutos. Selecciona los ejemplos según el público y deja tiempo para comparar sus predicciones con los eventos. No registra una sesión ya impartida.
 
 ## Agenda
 
@@ -32,10 +30,10 @@ ejemplos al canal y formato acordados por el equipo.
 - ¿Qué sucede si un `catch (Throwable)` consume una cancelación?
 - ¿Quién cancela una coroutine iniciada desde esta pantalla?
 
-## Definition of done de la aportación
+## Preparar y recoger la sesión
 
-- Material revisado para no incluir información propietaria.
+- Elegir dos experimentos y ejecutarlos antes de la sesión.
 - Código reducido, ejecutable y con pruebas.
-- Grabación, enlace, publicación o acta conservada como evidencia del objetivo.
+- Si se imparte, anotar fecha, formato y preguntas que merezca la pena incorporar.
 - Una conclusión o mejora surgida de las preguntas incorporada al documento.
 

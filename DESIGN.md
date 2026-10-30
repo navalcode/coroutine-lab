@@ -1,6 +1,6 @@
 # Coroutine Lab: screen design
 
-A workbench for predicting execution and inspecting actual traces. Its composition follows a question, strategy, code, action and event sequence. The tool uses an open guide, wrapping controls, a code plate and flat event rows, rather than a repeated panel template. Platform monospace is reserved for source and exact event messages.
+A workbench for predicting execution and inspecting actual traces. Its composition follows a question, strategy, code, action and event sequence. The tool uses an open guide, wrapping controls, a code plate and flat event rows, with the trace directly below the controls. Platform monospace is reserved for source and exact event messages.
 
 ## Visual system
 
@@ -14,6 +14,6 @@ The ViewModel owns the running scenario; navigation between sections and activit
 
 Headings expose native semantics. Trace rows merge their related text, and the Running/Ready label is a polite live region. Standard tab selection/ripple is the only added motion. Code wraps instead of horizontally overflowing. Error snippets show cancellation rethrowing before handling business failures; the executable domain now follows that rule in both previously misclassified cases.
 
-## Checked scope
+## Verification
 
-10 JVM tests; four real MainActivity journeys at API 37, also at 150% text/360×800 dp; selected Flow journey in EN/ES portrait, ES dark and EN landscape. Actual screenshots are emulator output. Lint has no errors and one target warning. CI runs JVM/lint/debug build; native checks are local. API 26 is the declared minimum, not a newly tested lower-platform result. No TalkBack, physical-device, optimized-release or store claim is made.
+See [VERIFICATION.md](docs/VERIFICATION.md) for dated test/build results, native journeys, screenshots and limits. The current editorial review replaces vague headings with specific experiments and actions. API names and stable trace messages remain identifiable.
