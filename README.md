@@ -40,11 +40,11 @@ Domain tests use virtual time. Compose collects state with `collectAsStateWithLi
 
 Detailed Spanish guides:
 
-- [Guia didactica](docs/01_GUIA_DIDACTICA.md)
-- [Launch async excepciones](docs/02_LAUNCH_ASYNC_EXCEPCIONES.md)
-- [Refactorizaciones](docs/03_REFACTORIZACIONES.md)
-- [Material para compartir](docs/04_MATERIAL_PARA_COMPARTIR.md)
-- [Ejercicios](docs/05_EJERCICIOS.md)
+- [Guide and exercises](docs/01_GUIA_DIDACTICA.md)
+- [Launch, async and exceptions](docs/02_LAUNCH_ASYNC_EXCEPCIONES.md)
+- [Fictional refactoring examples](docs/03_REFACTORIZACIONES.md)
+- [Session outline](docs/04_MATERIAL_PARA_COMPARTIR.md)
+- [Exercises](docs/05_EJERCICIOS.md)
 
 ## Checks and limits
 

@@ -40,10 +40,10 @@ Los tests del dominio usan tiempo virtual. Compose recoge el estado con `collect
 
 Guías detalladas en español:
 
-- [Guia didactica](docs/01_GUIA_DIDACTICA.md)
-- [Launch async excepciones](docs/02_LAUNCH_ASYNC_EXCEPCIONES.md)
-- [Refactorizaciones](docs/03_REFACTORIZACIONES.md)
-- [Material para compartir](docs/04_MATERIAL_PARA_COMPARTIR.md)
+- [Guía y ejercicios](docs/01_GUIA_DIDACTICA.md)
+- [launch, async y excepciones](docs/02_LAUNCH_ASYNC_EXCEPCIONES.md)
+- [Casos de refactorización](docs/03_REFACTORIZACIONES.md)
+- [Guion de sesión](docs/04_MATERIAL_PARA_COMPARTIR.md)
 - [Ejercicios](docs/05_EJERCICIOS.md)
 
 ## Comprobaciones y límites
